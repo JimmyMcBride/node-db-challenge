@@ -5,7 +5,7 @@ const express = require('express')
 require('dotenv').config()
 
 // Set up routes and middeware 🏇
-const projectsRouter =require('../routers/projectsRouter')
+const projectsRouter =require('./routers/projectsRouter')
 const helmet = require('helmet')
 const morgan = require('morgan')
 
