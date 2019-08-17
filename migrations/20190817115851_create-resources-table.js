@@ -8,12 +8,12 @@ exports.up = function(knex) {
 
     table.text('description', 256)
 
-    // table.integer('project_id')
-    //   .notNullable()
-    //   .unsigned()
-    //   .references('projects.id')
-    //   .onDelete('RESTRICT')
-    //   .onUpdate('CASCADE')
+    table.integer('project_id')
+      .notNullable()
+      .unsigned()
+      .references('projects.id')
+      // .onDelete('RESTRICT')
+      // .onUpdate('CASCADE')
   })
 
 }

@@ -10,6 +10,11 @@ exports.up = function(knex) {
 
     table.boolean('completed')
       .defaultTo(false)
+
+    table.integer('project_id')
+      .unsigned()
+      .notNullable()
+      .references('projects.id')
   })
 
 }
